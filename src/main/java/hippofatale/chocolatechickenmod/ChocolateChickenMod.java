@@ -1,5 +1,8 @@
 package hippofatale.chocolatechickenmod;
 
+import hippofatale.chocolatechickenmod.block.ModBlocks;
+import hippofatale.chocolatechickenmod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -39,6 +42,9 @@ public class ChocolateChickenMod
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -54,6 +60,13 @@ public class ChocolateChickenMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.CHOCOLATE_SYRUP);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.CHOCOLATE_SYRUP_CRATE);
+        }
 
     }
 
