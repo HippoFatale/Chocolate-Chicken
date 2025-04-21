@@ -1,5 +1,7 @@
 {
   "item.chocolatechickenmod.chocolate_syrup": "Chocolate Syrup",
 
-  "block.chocolatechickenmod.chocolate_syrup_crate": "Crate of Chocolate Syrup"
+  "block.chocolatechickenmod.chocolate_syrup_crate": "Crate of Chocolate Syrup",
+
+  "creativetab.chocolatechickenmod.chocolate_chicken_items": "Chocolate Chicken Mod"
 }
