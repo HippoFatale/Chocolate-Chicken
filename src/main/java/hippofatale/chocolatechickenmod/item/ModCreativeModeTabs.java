@@ -28,6 +28,10 @@ public class ModCreativeModeTabs {
 
                         //food
                         output.accept(ModItems.CHOCOLATE_CHICKEN);
+                        output.accept(ModItems.CHOCOLATE_MUTTON);
+                        output.accept(ModItems.CHOCOLATE_PORK);
+                        output.accept(ModItems.CHOCOLATE_STEAK);
+
 
                     })
 
