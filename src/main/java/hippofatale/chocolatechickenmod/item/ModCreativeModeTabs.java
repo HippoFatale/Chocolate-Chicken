@@ -17,7 +17,7 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> CHOCOLATE_CHICKEN_ITEMS_TAB = CREATIVE_MODE_TAB.register("chocolate_chicken_items_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.CHOCOLATE_SYRUP.get()))
+                    .icon(() -> new ItemStack(ModItems.CHOCOLATE_CHICKEN.get()))
                     .title(Component.translatable("creativetab.chocolatechickenmod.chocolate_chicken_items"))
                     .displayItems((parameters, output) -> {
                         //items
@@ -25,6 +25,9 @@ public class ModCreativeModeTabs {
 
                         //blocks
                         output.accept(ModBlocks.CHOCOLATE_SYRUP_CRATE);
+
+                        //food
+                        output.accept(ModItems.CHOCOLATE_CHICKEN);
 
                     })
 

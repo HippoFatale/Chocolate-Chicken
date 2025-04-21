@@ -12,6 +12,9 @@ public class ModItems {
     public static final DeferredItem<Item> CHOCOLATE_SYRUP = ITEMS.register("chocolate_syrup",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> CHOCOLATE_CHICKEN = ITEMS.register("chocolate_chicken",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.CHOCOLATE_CHICKEN)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
