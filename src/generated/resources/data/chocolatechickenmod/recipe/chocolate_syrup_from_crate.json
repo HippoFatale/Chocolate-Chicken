@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chocolatechickenmod:chocolate_syrup_crate"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "chocolatechickenmod:chocolate_syrup"
+  }
+}
