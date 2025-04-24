@@ -5,6 +5,7 @@ import hippofatale.chocolatechickenmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.CakeBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -22,6 +23,11 @@ public class ModBlocks {
                     .sound(SoundType.WOOD)
             )
     );
+
+//    public static final DeferredBlock<CakeBlock> CHOCOLATE_CAKE = registerBlock("chocolate_cake",
+//            () -> new CakeBlock(BlockBehaviour.Properties.of()
+//            )
+//    );
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

@@ -19,7 +19,7 @@ public class ModTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> CHOCOLATE_MEAT = createTag("chocolate_meat");
+        public static final TagKey<Item> CHOCOLATE_FOOD = createTag("chocolate_food");
 
         public static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(ChocolateChickenMod.MOD_ID, name));
