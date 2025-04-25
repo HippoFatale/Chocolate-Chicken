@@ -1,11 +1,11 @@
 package hippofatale.chocolatechickenmod.block;
 
 import hippofatale.chocolatechickenmod.ChocolateChickenMod;
+import hippofatale.chocolatechickenmod.block.custom.CrateBlock;
 import hippofatale.chocolatechickenmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.CakeBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -18,16 +18,11 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(ChocolateChickenMod.MOD_ID);
 
     public static final DeferredBlock<Block> CHOCOLATE_SYRUP_CRATE = registerBlock("chocolate_syrup_crate",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new CrateBlock(BlockBehaviour.Properties.of()
                     .strength(4f)
                     .sound(SoundType.WOOD)
             )
     );
-
-//    public static final DeferredBlock<CakeBlock> CHOCOLATE_CAKE = registerBlock("chocolate_cake",
-//            () -> new CakeBlock(BlockBehaviour.Properties.of()
-//            )
-//    );
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
