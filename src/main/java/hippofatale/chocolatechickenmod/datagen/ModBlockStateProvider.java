@@ -4,6 +4,7 @@ import hippofatale.chocolatechickenmod.ChocolateChickenMod;
 import hippofatale.chocolatechickenmod.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 public class ModBlockStateProvider extends BlockStateProvider {
@@ -13,11 +14,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        horizontalBlock(ModBlocks.CHOCOLATE_SYRUP_CRATE.get(), models().orientableWithBottom("chocolate_syrup_crate", modLoc("block/chocolate_syrup_crate_side"), modLoc("block/chocolate_syrup_crate_front"), modLoc("block/chocolate_syrup_crate_side"), modLoc("block/chocolate_syrup_crate_top")));
-        simpleBlockItem(ModBlocks.CHOCOLATE_SYRUP_CRATE.get(), models().orientableWithBottom("chocolate_syrup_crate", modLoc("block/chocolate_syrup_crate_side"), modLoc("block/chocolate_syrup_crate_front"), modLoc("block/chocolate_syrup_crate_side"), modLoc("block/chocolate_syrup_crate_top")));
+        //chocolate syrup crate
+        ModelFile chocolateSyrupCrateModel = models().orientableWithBottom("chocolate_syrup_crate",
+                modLoc("block/chocolate_syrup_crate_side"),
+                modLoc("block/chocolate_syrup_crate_front"),
+                modLoc("block/chocolate_syrup_crate_side"),
+                modLoc("block/chocolate_syrup_crate_top")
+        );
+        horizontalBlock(ModBlocks.CHOCOLATE_SYRUP_CRATE.get(), chocolateSyrupCrateModel);
+        simpleBlockItem(ModBlocks.CHOCOLATE_SYRUP_CRATE.get(), chocolateSyrupCrateModel);
     }
 
-//    private void blockWithItem(DeferredBlock<?> deferredBlock) {
-//        simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
-//    }
 }

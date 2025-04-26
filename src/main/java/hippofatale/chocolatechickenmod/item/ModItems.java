@@ -25,6 +25,9 @@ public class ModItems {
             });
 
     //food
+    public static final DeferredItem<Item> CHOCOLATE_BREAD = ITEMS.register("chocolate_bread",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.CHOCOLATE_BREAD)));
+
     public static final DeferredItem<Item> CHOCOLATE_CHICKEN = ITEMS.register("chocolate_chicken",
             () -> new Item(new Item.Properties().food(ModFoodProperties.CHOCOLATE_CHICKEN)));
 

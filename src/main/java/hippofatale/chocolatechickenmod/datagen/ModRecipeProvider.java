@@ -22,8 +22,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CHOCOLATE_SYRUP.get(), 4)
                 .requires(Items.COCOA_BEANS)
                 .requires(Items.SUGAR)
+                .requires(Items.WATER_BUCKET)
                 .unlockedBy("has_cocoa_beans", has(Items.COCOA_BEANS))
                 .unlockedBy("has_sugar", has(Items.SUGAR))
+                .unlockedBy("has_water_bucket", has(Items.WATER_BUCKET))
                 .save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CHOCOLATE_SYRUP.get(), 9)
                 .requires(ModBlocks.CHOCOLATE_SYRUP_CRATE)
@@ -37,7 +39,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_chocolate_syrup", has(ModItems.CHOCOLATE_SYRUP))
                 .save(recipeOutput);
 
-        //chocolate meat
+        //chocolate food
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CHOCOLATE_BREAD.get())
+                .requires(ModItems.CHOCOLATE_SYRUP)
+                .requires(Items.BREAD)
+                .unlockedBy("has_chocolate_syrup", has(ModItems.CHOCOLATE_SYRUP))
+                .unlockedBy("has_bread", has(Items.BREAD))
+                .save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CHOCOLATE_CHICKEN.get())
                 .requires(ModItems.CHOCOLATE_SYRUP)
                 .requires(Items.COOKED_CHICKEN)

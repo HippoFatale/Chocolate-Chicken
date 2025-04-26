@@ -3,6 +3,11 @@ package hippofatale.chocolatechickenmod.item;
 import net.minecraft.world.food.FoodProperties;
 
 public class ModFoodProperties {
+    public static final FoodProperties CHOCOLATE_BREAD = new FoodProperties.Builder()
+            .nutrition(7)
+            .saturationModifier(0.7f)
+            .build();
+
     public static final FoodProperties CHOCOLATE_CHICKEN = new FoodProperties.Builder()
             .nutrition(9)
             .saturationModifier(0.7f)

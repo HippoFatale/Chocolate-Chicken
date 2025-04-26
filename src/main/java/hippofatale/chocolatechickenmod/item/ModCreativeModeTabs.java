@@ -27,6 +27,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CHOCOLATE_SYRUP_CRATE);
 
                         //food
+                        output.accept(ModItems.CHOCOLATE_BREAD);
                         output.accept(ModItems.CHOCOLATE_CHICKEN);
                         output.accept(ModItems.CHOCOLATE_MUTTON);
                         output.accept(ModItems.CHOCOLATE_PORK);

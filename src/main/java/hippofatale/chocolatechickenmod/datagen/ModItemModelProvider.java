@@ -15,6 +15,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         basicItem(ModItems.CHOCOLATE_SYRUP.get());
 
+        basicItem(ModItems.CHOCOLATE_BREAD.get());
         basicItem(ModItems.CHOCOLATE_CHICKEN.get());
         basicItem(ModItems.CHOCOLATE_MUTTON.get());
         basicItem(ModItems.CHOCOLATE_PORK.get());
