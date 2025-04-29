@@ -10,6 +10,8 @@ import net.minecraft.world.level.block.Block;
 
 public class ModTags {
     public static class Blocks {
+        public static final TagKey<Block> NEEDS_CHOCOLATE_TOOL = createTag("needs_chocolate_tool");
+        public static final TagKey<Block> INCORRECT_FOR_CHOCOLATE_TOOL = createTag("incorrect_for_chocolate_tool");
 
 
         public static TagKey<Block> createTag(String name) {
@@ -20,6 +22,7 @@ public class ModTags {
 
     public static class Items {
         public static final TagKey<Item> CHOCOLATE_FOOD = createTag("chocolate_food");
+        public static final TagKey<Item> CHOCOLATE_TOOLS = createTag("chocolate_tools");
 
         public static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(ChocolateChickenMod.MOD_ID, name));

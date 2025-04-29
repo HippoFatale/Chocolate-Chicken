@@ -28,4 +28,10 @@ public class ModFoodProperties {
             .saturationModifier(0.9f)
             .build();
 
+    public static final FoodProperties CHOCOLATE_SWORD = new FoodProperties.Builder()
+            .nutrition(21)
+            .saturationModifier(0.7f)
+            .build();
+
+
 }

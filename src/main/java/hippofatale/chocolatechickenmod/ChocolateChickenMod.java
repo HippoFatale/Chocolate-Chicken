@@ -3,6 +3,7 @@ package hippofatale.chocolatechickenmod;
 import hippofatale.chocolatechickenmod.block.ModBlocks;
 import hippofatale.chocolatechickenmod.item.ModCreativeModeTabs;
 import hippofatale.chocolatechickenmod.item.ModItems;
+import hippofatale.chocolatechickenmod.loot.ModLootModifiers;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -47,6 +48,8 @@ public class ChocolateChickenMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModLootModifiers.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

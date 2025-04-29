@@ -1,14 +1,20 @@
 {
   "item.chocolatechickenmod.chocolate_syrup": "Chocolate Syrup",
+
   "item.chocolatechickenmod.chocolate_bread": "Chocolate Bread",
   "item.chocolatechickenmod.chocolate_chicken": "Chocolate Chicken",
   "item.chocolatechickenmod.chocolate_mutton": "Chocolate Mutton",
   "item.chocolatechickenmod.chocolate_pork": "Chocolate Pork",
   "item.chocolatechickenmod.chocolate_steak": "Chocolate Steak",
 
+  "item.chocolatechickenmod.chocolate_sword": "Chocolate Sword",
+
+
   "block.chocolatechickenmod.chocolate_syrup_crate": "Crate of Chocolate Syrup",
 
+
   "creativetab.chocolatechickenmod.chocolate_chicken_items": "Chocolate Chicken Mod",
+
 
   "tooltip.chocolatechickenmod.chocolate_syrup": "Adds sweetness and a little bitterness to your food....whatever it is!"
 }

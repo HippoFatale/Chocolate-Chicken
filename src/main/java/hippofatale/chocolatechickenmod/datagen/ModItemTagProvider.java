@@ -6,6 +6,7 @@ import hippofatale.chocolatechickenmod.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -25,5 +26,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.CHOCOLATE_MUTTON.get())
                 .add(ModItems.CHOCOLATE_PORK.get())
                 .add(ModItems.CHOCOLATE_STEAK.get());
+
+        tag(ModTags.Items.CHOCOLATE_TOOLS)
+                .add(ModItems.CHOCOLATE_SWORD.get());
+
+        tag(ItemTags.SWORDS)
+                .add(ModItems.CHOCOLATE_SWORD.get());
     }
 }

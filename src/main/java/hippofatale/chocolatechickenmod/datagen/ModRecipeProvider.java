@@ -71,6 +71,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_cooked_beef", has(Items.COOKED_BEEF))
                 .save(recipeOutput);
 
+        //chocolate tools
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHOCOLATE_SWORD.get())
+                .pattern("C")
+                .pattern("C")
+                .pattern("B")
+                .define('B', Items.BREAD)
+                .define('C', ModItems.CHOCOLATE_BREAD.get())
+                .unlockedBy("has_bread", has(Items.BREAD))
+                .unlockedBy("has_chocolate_bread", has(ModItems.CHOCOLATE_BREAD))
+                .save(recipeOutput);
+
 
 
     }

@@ -33,6 +33,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHOCOLATE_PORK);
                         output.accept(ModItems.CHOCOLATE_STEAK);
 
+                        //tools
+                        output.accept(ModItems.CHOCOLATE_SWORD);
+
 
                     })
 
