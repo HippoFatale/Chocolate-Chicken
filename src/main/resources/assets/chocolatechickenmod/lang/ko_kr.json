@@ -1,0 +1,21 @@
+{
+  "item.chocolatechickenmod.chocolate_syrup": "초코 시럽",
+
+  "item.chocolatechickenmod.chocolate_bread": "초코 빵",
+  "item.chocolatechickenmod.chocolate_chicken": "초코 치킨",
+  "item.chocolatechickenmod.chocolate_mutton": "초코 양고기",
+  "item.chocolatechickenmod.chocolate_pork": "초코 삼겹살",
+  "item.chocolatechickenmod.chocolate_steak": "초코 스테이크",
+
+  "item.chocolatechickenmod.chocolate_sword": "초코 칼",
+
+
+  "block.chocolatechickenmod.chocolate_syrup_crate": "초코 시럽 상자",
+
+
+  "creativetab.chocolatechickenmod.chocolate_chicken_items": "Chocolate Chicken Mod",
+
+
+  "tooltip.chocolatechickenmod.chocolate_syrup": "음식이 뭐든지 간에 달콤함과 약간의 씁쓸함을 첨가합니다.",
+  "tooltip.chocolatechickenmod.chocolate_sword": "동물을 잡으면 해당 동물의 초코 고기를 드랍합니다."
+}

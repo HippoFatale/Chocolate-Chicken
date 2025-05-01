@@ -43,7 +43,13 @@ public class ModItems {
                     new Item.Properties()
                             .attributes(SwordItem.createAttributes(ModToolTiers.CHOCOLATE, 3, -2.4f))
                             .food(ModFoodProperties.CHOCOLATE_SWORD)
-            )
+            ) {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.chocolatechickenmod.chocolate_sword"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            }
     );
 
 
