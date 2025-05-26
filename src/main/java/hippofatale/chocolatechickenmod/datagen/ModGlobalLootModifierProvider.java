@@ -10,9 +10,12 @@ import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemEntityPropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.neoforged.neoforge.common.data.GlobalLootModifierProvider;
 import net.neoforged.neoforge.common.loot.LootTableIdCondition;
 
@@ -27,6 +30,29 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
 
     @Override
     protected void start() {
+        //citrus fruits from oak leaves
+        this.add("citrus_orange_from_oak_leaves",
+                new AddItemModifier(new LootItemCondition[] {
+                        LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.OAK_LEAVES).build(),
+                        LootItemRandomChanceCondition.randomChance(0.005f).build()
+                }, ModItems.CITRUS_ORANGE.get()));
+        this.add("citrus_lemon_from_oak_leaves",
+                new AddItemModifier(new LootItemCondition[] {
+                        LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.OAK_LEAVES).build(),
+                        LootItemRandomChanceCondition.randomChance(0.005f).build()
+                }, ModItems.CITRUS_LEMON.get()));
+        //citrus fruits from dark oak leaves
+        this.add("citrus_orange_from_dark_oak_leaves",
+                new AddItemModifier(new LootItemCondition[] {
+                        LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.DARK_OAK_LEAVES).build(),
+                        LootItemRandomChanceCondition.randomChance(0.005f).build()
+                }, ModItems.CITRUS_ORANGE.get()));
+        this.add("citrus_lemon_from_dark_oak_leaves",
+                new AddItemModifier(new LootItemCondition[] {
+                        LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.DARK_OAK_LEAVES).build(),
+                        LootItemRandomChanceCondition.randomChance(0.005f).build()
+                }, ModItems.CITRUS_LEMON.get()));
+
         //chocolate meat from livestock
         this.add("chocolate_chicken_from_chicken",
                 new AddItemModifier(new LootItemCondition[] {

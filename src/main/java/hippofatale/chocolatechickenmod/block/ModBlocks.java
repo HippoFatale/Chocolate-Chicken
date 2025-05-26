@@ -23,6 +23,12 @@ public class ModBlocks {
                     .sound(SoundType.WOOD)
             )
     );
+    public static final DeferredBlock<Block> BLUE_CURACAO_SYRUP_CRATE = registerBlock("blue_curacao_syrup_crate",
+            () -> new CrateBlock(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .sound(SoundType.WOOD)
+            )
+    );
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

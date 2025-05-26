@@ -21,6 +21,7 @@ public class ModTags {
     }
 
     public static class Items {
+        public static final TagKey<Item> CITRUS_FRUITS = createTag("citrus_fruits");
         public static final TagKey<Item> CHOCOLATE_FOOD = createTag("chocolate_food");
         public static final TagKey<Item> CHOCOLATE_TOOLS = createTag("chocolate_tools");
 

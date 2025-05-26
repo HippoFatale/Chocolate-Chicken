@@ -20,6 +20,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        tag(ModTags.Items.CITRUS_FRUITS)
+                .add(ModItems.CITRUS_ORANGE.get())
+                .add(ModItems.CITRUS_LEMON.get());
+
         tag(ModTags.Items.CHOCOLATE_FOOD)
                 .add(ModItems.CHOCOLATE_BREAD.get())
                 .add(ModItems.CHOCOLATE_CHICKEN.get())

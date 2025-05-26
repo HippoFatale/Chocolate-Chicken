@@ -17,6 +17,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlocks.CHOCOLATE_SYRUP_CRATE.get());
+        dropSelf(ModBlocks.BLUE_CURACAO_SYRUP_CRATE.get());
     }
 
     @Override

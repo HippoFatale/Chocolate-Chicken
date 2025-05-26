@@ -16,14 +16,22 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        basicItem(ModItems.CHOCOLATE_SYRUP.get());
+        //citrus fruits
+        basicItem(ModItems.CITRUS_ORANGE.get());
+        basicItem(ModItems.CITRUS_LEMON.get());
 
+        //syrups
+        basicItem(ModItems.CHOCOLATE_SYRUP.get());
+        basicItem(ModItems.BLUE_CURACAO_SYRUP.get());
+
+        //chocolate
+        //food
         basicItem(ModItems.CHOCOLATE_BREAD.get());
         basicItem(ModItems.CHOCOLATE_CHICKEN.get());
         basicItem(ModItems.CHOCOLATE_MUTTON.get());
         basicItem(ModItems.CHOCOLATE_PORK.get());
         basicItem(ModItems.CHOCOLATE_STEAK.get());
-
+        //tools
         handheldItem(ModItems.CHOCOLATE_SWORD.get());
     }
 

@@ -23,6 +23,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
         );
         horizontalBlock(ModBlocks.CHOCOLATE_SYRUP_CRATE.get(), chocolateSyrupCrateModel);
         simpleBlockItem(ModBlocks.CHOCOLATE_SYRUP_CRATE.get(), chocolateSyrupCrateModel);
+
+        //blue curacao syrup crate
+        ModelFile blueCuracaoSyrupCrateModel = models().orientableWithBottom("blue_curacao_syrup_crate",
+                modLoc("block/blue_curacao_syrup_crate_side"),
+                modLoc("block/blue_curacao_syrup_crate_front"),
+                modLoc("block/blue_curacao_syrup_crate_side"),
+                modLoc("block/blue_curacao_syrup_crate_top")
+        );
+        horizontalBlock(ModBlocks.BLUE_CURACAO_SYRUP_CRATE.get(), blueCuracaoSyrupCrateModel);
+        simpleBlockItem(ModBlocks.BLUE_CURACAO_SYRUP_CRATE.get(), blueCuracaoSyrupCrateModel);
     }
 
 }

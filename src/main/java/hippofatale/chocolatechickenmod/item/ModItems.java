@@ -14,8 +14,13 @@ import java.util.List;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ChocolateChickenMod.MOD_ID);
+    //citrus fruits
+    public static final DeferredItem<Item> CITRUS_ORANGE = ITEMS.register("citrus_orange",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.CITRUS_ORANGE)));
+    public static final DeferredItem<Item> CITRUS_LEMON = ITEMS.register("citrus_lemon",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.CITRUS_LEMON)));
 
-    //items
+    //syrups
     public static final DeferredItem<Item> CHOCOLATE_SYRUP = ITEMS.register("chocolate_syrup",
             () -> new Item(new Item.Properties()) {
                 @Override
@@ -24,8 +29,17 @@ public class ModItems {
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             });
+    public static final DeferredItem<Item> BLUE_CURACAO_SYRUP = ITEMS.register("blue_curacao_syrup",
+            () -> new Item(new Item.Properties()) {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.chocolatechickenmod.blue_curacao_syrup"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
 
-    //chocolate food
+    //chocolate
+    //food
     public static final DeferredItem<Item> CHOCOLATE_BREAD = ITEMS.register("chocolate_bread",
             () -> new Item(new Item.Properties().food(ModFoodProperties.CHOCOLATE_BREAD)));
     public static final DeferredItem<Item> CHOCOLATE_CHICKEN = ITEMS.register("chocolate_chicken",
@@ -36,8 +50,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.CHOCOLATE_PORK)));
     public static final DeferredItem<Item> CHOCOLATE_STEAK = ITEMS.register("chocolate_steak",
             () -> new Item(new Item.Properties().food(ModFoodProperties.CHOCOLATE_STEAK)));
-
-    //chocolate tools
+    //tools
     public static final DeferredItem<SwordItem> CHOCOLATE_SWORD = ITEMS.register("chocolate_sword",
             () -> new SwordItem(ModToolTiers.CHOCOLATE,
                     new Item.Properties()

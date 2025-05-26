@@ -19,7 +19,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(RecipeOutput recipeOutput) {
 
         //chocolate syrup
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CHOCOLATE_SYRUP.get(), 4)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CHOCOLATE_SYRUP.get(), 2)
                 .requires(Items.COCOA_BEANS)
                 .requires(Items.SUGAR)
                 .requires(Items.WATER_BUCKET)
@@ -39,7 +39,33 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_chocolate_syrup", has(ModItems.CHOCOLATE_SYRUP))
                 .save(recipeOutput);
 
-        //chocolate food
+        //blue curacao syrup
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.BLUE_CURACAO_SYRUP.get(), 3)
+                .requires(Items.BLUE_DYE)
+                .requires(ModItems.CITRUS_ORANGE)
+                .requires(ModItems.CITRUS_LEMON)
+                .requires(Items.SUGAR)
+                .requires(Items.WATER_BUCKET)
+                .unlockedBy("has_blue_dye", has(Items.BLUE_DYE))
+                .unlockedBy("has_citrus_orange", has(ModItems.CITRUS_ORANGE))
+                .unlockedBy("has_citrus_lemon", has(ModItems.CITRUS_LEMON))
+                .unlockedBy("has_sugar", has(Items.SUGAR))
+                .unlockedBy("has_water_bucket", has(Items.WATER_BUCKET))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLUE_CURACAO_SYRUP.get(), 9)
+                .requires(ModBlocks.BLUE_CURACAO_SYRUP_CRATE)
+                .unlockedBy("has_blue_curacao_syrup_crate", has(ModBlocks.BLUE_CURACAO_SYRUP_CRATE))
+                .save(recipeOutput, "chocolatechickenmod:blue_curacao_syrup_from_crate");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BLUE_CURACAO_SYRUP_CRATE.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.BLUE_CURACAO_SYRUP.get())
+                .unlockedBy("has_blue_curacao_syrup", has(ModItems.BLUE_CURACAO_SYRUP))
+                .save(recipeOutput);
+
+        //chocolate
+        //food
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CHOCOLATE_BREAD.get())
                 .requires(ModItems.CHOCOLATE_SYRUP)
                 .requires(Items.BREAD)
@@ -70,8 +96,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_chocolate_syrup", has(ModItems.CHOCOLATE_SYRUP))
                 .unlockedBy("has_cooked_beef", has(Items.COOKED_BEEF))
                 .save(recipeOutput);
-
-        //chocolate tools
+        //tools
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHOCOLATE_SWORD.get())
                 .pattern("C")
                 .pattern("C")

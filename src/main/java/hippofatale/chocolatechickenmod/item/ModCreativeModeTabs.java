@@ -20,19 +20,24 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModItems.CHOCOLATE_CHICKEN.get()))
                     .title(Component.translatable("creativetab.chocolatechickenmod.chocolate_chicken_items"))
                     .displayItems((parameters, output) -> {
-                        //items
+                        //citrus fruits
+                        output.accept(ModItems.CITRUS_ORANGE);
+                        output.accept(ModItems.CITRUS_LEMON);
+
+                        //syrups
                         output.accept(ModItems.CHOCOLATE_SYRUP);
-
-                        //blocks
+                        output.accept(ModItems.BLUE_CURACAO_SYRUP);
+                        //crates
                         output.accept(ModBlocks.CHOCOLATE_SYRUP_CRATE);
+                        output.accept(ModBlocks.BLUE_CURACAO_SYRUP_CRATE);
 
+                        //chocolate
                         //food
                         output.accept(ModItems.CHOCOLATE_BREAD);
                         output.accept(ModItems.CHOCOLATE_CHICKEN);
                         output.accept(ModItems.CHOCOLATE_MUTTON);
                         output.accept(ModItems.CHOCOLATE_PORK);
                         output.accept(ModItems.CHOCOLATE_STEAK);
-
                         //tools
                         output.accept(ModItems.CHOCOLATE_SWORD);
 
