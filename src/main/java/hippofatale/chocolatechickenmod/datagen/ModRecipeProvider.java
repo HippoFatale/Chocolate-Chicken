@@ -66,31 +66,31 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         //chocolate
         //food
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CHOCOLATE_BREAD.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CHOCOLATE_BREAD.get())
                 .requires(ModItems.CHOCOLATE_SYRUP)
                 .requires(Items.BREAD)
                 .unlockedBy("has_chocolate_syrup", has(ModItems.CHOCOLATE_SYRUP))
                 .unlockedBy("has_bread", has(Items.BREAD))
                 .save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CHOCOLATE_CHICKEN.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CHOCOLATE_CHICKEN.get())
                 .requires(ModItems.CHOCOLATE_SYRUP)
                 .requires(Items.COOKED_CHICKEN)
                 .unlockedBy("has_chocolate_syrup", has(ModItems.CHOCOLATE_SYRUP))
                 .unlockedBy("has_cooked_chicken", has(Items.COOKED_CHICKEN))
                 .save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CHOCOLATE_MUTTON.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CHOCOLATE_MUTTON.get())
                 .requires(ModItems.CHOCOLATE_SYRUP)
                 .requires(Items.COOKED_MUTTON)
                 .unlockedBy("has_chocolate_syrup", has(ModItems.CHOCOLATE_SYRUP))
                 .unlockedBy("has_cooked_mutton", has(Items.COOKED_MUTTON))
                 .save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CHOCOLATE_PORK.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CHOCOLATE_PORK.get())
                 .requires(ModItems.CHOCOLATE_SYRUP)
                 .requires(Items.COOKED_PORKCHOP)
                 .unlockedBy("has_chocolate_syrup", has(ModItems.CHOCOLATE_SYRUP))
                 .unlockedBy("has_cooked_porkchop", has(Items.COOKED_PORKCHOP))
                 .save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CHOCOLATE_STEAK.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CHOCOLATE_STEAK.get())
                 .requires(ModItems.CHOCOLATE_SYRUP)
                 .requires(Items.COOKED_BEEF)
                 .unlockedBy("has_chocolate_syrup", has(ModItems.CHOCOLATE_SYRUP))
