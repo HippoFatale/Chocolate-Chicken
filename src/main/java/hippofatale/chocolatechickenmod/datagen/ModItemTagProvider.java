@@ -31,6 +31,12 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.CHOCOLATE_PORK.get())
                 .add(ModItems.CHOCOLATE_STEAK.get());
 
+        tag(ModTags.Items.BLUE_FOOD)
+                .add(ModItems.BLUE_CHICKEN.get())
+                .add(ModItems.BLUE_MUTTON.get())
+                .add(ModItems.BLUE_PORK.get())
+                .add(ModItems.BLUE_STEAK.get());
+
         tag(ModTags.Items.CHOCOLATE_TOOLS)
                 .add(ModItems.CHOCOLATE_SWORD.get());
 

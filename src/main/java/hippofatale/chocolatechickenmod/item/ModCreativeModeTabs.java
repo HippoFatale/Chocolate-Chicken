@@ -38,6 +38,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHOCOLATE_PORK);
                         output.accept(ModItems.CHOCOLATE_STEAK);
 
+                        //blue curacao
+                        //food
+                        output.accept(ModItems.BLUE_CHICKEN);
+                        output.accept(ModItems.BLUE_MUTTON);
+                        output.accept(ModItems.BLUE_PORK);
+                        output.accept(ModItems.BLUE_STEAK);
+
                         //tools
                         output.accept(ModItems.CHOCOLATE_SWORD);
                         output.accept(ModBlocks.CHOCOLATE_DOUBLE_BOILER);

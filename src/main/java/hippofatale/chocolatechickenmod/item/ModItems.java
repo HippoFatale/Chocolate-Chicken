@@ -50,6 +50,19 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.CHOCOLATE_PORK)));
     public static final DeferredItem<Item> CHOCOLATE_STEAK = ITEMS.register("chocolate_steak",
             () -> new Item(new Item.Properties().food(ModFoodProperties.CHOCOLATE_STEAK)));
+
+    //blue curacao
+    //food
+    public static final DeferredItem<Item> BLUE_CHICKEN = ITEMS.register("blue_chicken",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BLUE_CHICKEN)));
+    public static final DeferredItem<Item> BLUE_MUTTON = ITEMS.register("blue_mutton",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BLUE_MUTTON)));
+    public static final DeferredItem<Item> BLUE_PORK = ITEMS.register("blue_pork",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BLUE_PORK)));
+    public static final DeferredItem<Item> BLUE_STEAK = ITEMS.register("blue_steak",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BLUE_STEAK)));
+
+
     //tools
     public static final DeferredItem<SwordItem> CHOCOLATE_SWORD = ITEMS.register("chocolate_sword",
             () -> new SwordItem(ModToolTiers.CHOCOLATE,

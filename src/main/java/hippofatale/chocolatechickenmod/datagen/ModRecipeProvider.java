@@ -97,6 +97,41 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_cooked_beef", has(Items.COOKED_BEEF))
                 .save(recipeOutput);
 
+        //blue curacao
+        //food
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.BLUE_CHICKEN.get())
+                .requires(ModItems.BLUE_CURACAO_SYRUP)
+                .requires(Items.COOKED_CHICKEN)
+                .requires(ModItems.CITRUS_ORANGE)
+                .unlockedBy("has_blue_curacao_syrup", has(ModItems.BLUE_CURACAO_SYRUP))
+                .unlockedBy("has_cooked_chicken", has(Items.COOKED_CHICKEN))
+                .unlockedBy("has_citrus_orange", has(ModItems.CITRUS_ORANGE))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.BLUE_MUTTON.get())
+                .requires(ModItems.BLUE_CURACAO_SYRUP)
+                .requires(Items.COOKED_MUTTON)
+                .requires(ModItems.CITRUS_LEMON)
+                .unlockedBy("has_blue_curacao_syrup", has(ModItems.BLUE_CURACAO_SYRUP))
+                .unlockedBy("has_cooked_mutton", has(Items.COOKED_MUTTON))
+                .unlockedBy("has_citrus_lemon", has(ModItems.CITRUS_LEMON))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.BLUE_PORK.get())
+                .requires(ModItems.BLUE_CURACAO_SYRUP)
+                .requires(Items.COOKED_PORKCHOP)
+                .requires(ModItems.CITRUS_ORANGE)
+                .unlockedBy("has_blue_curacao_syrup", has(ModItems.BLUE_CURACAO_SYRUP))
+                .unlockedBy("has_cooked_porkchop", has(Items.COOKED_PORKCHOP))
+                .unlockedBy("has_citrus_orange", has(ModItems.CITRUS_ORANGE))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.BLUE_STEAK.get())
+                .requires(ModItems.BLUE_CURACAO_SYRUP)
+                .requires(Items.COOKED_BEEF)
+                .requires(ModItems.CITRUS_LEMON)
+                .unlockedBy("has_blue_curacao_syrup", has(ModItems.BLUE_CURACAO_SYRUP))
+                .unlockedBy("has_cooked_beef", has(Items.COOKED_BEEF))
+                .unlockedBy("has_citrus_lemon", has(ModItems.CITRUS_LEMON))
+                .save(recipeOutput);
+
         //tools
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHOCOLATE_SWORD.get())
                 .pattern("C")

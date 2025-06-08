@@ -31,6 +31,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.CHOCOLATE_MUTTON.get());
         basicItem(ModItems.CHOCOLATE_PORK.get());
         basicItem(ModItems.CHOCOLATE_STEAK.get());
+
+        //blue curacao
+        //food
+        basicItem(ModItems.BLUE_CHICKEN.get());
+        basicItem(ModItems.BLUE_MUTTON.get());
+        basicItem(ModItems.BLUE_PORK.get());
+        basicItem(ModItems.BLUE_STEAK.get());
+
         //tools
         handheldItem(ModItems.CHOCOLATE_SWORD.get());
     }
