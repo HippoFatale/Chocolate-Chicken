@@ -3,8 +3,8 @@
   "item.chocolatechickenmod.citrus_lemon": "Lemon",
 
   "item.chocolatechickenmod.chocolate_syrup": "Chocolate Syrup",
-  "item.chocolatechickenmod.blue_curacao_syrup": "Blue Curacao Syrup",
   "block.chocolatechickenmod.chocolate_syrup_crate": "Crate of Chocolate Syrup",
+  "item.chocolatechickenmod.blue_curacao_syrup": "Blue Curacao Syrup",
   "block.chocolatechickenmod.blue_curacao_syrup_crate": "Crate of Blue Curacao Syrup",
 
   "item.chocolatechickenmod.chocolate_bread": "Chocolate Bread",
@@ -24,7 +24,7 @@
 
   "creativetab.chocolatechickenmod.chocolate_chicken_items": "Chocolate Chicken Mod",
 
-  "tooltip.chocolatechickenmod.chocolate_syrup": "Adds sweetness and a little bitterness to your food....whatever it is!",
-  "tooltip.chocolatechickenmod.blue_curacao_syrup": "Adds BLUE to your food....whatever it is!",
-  "tooltip.chocolatechickenmod.chocolate_sword": "Drops corresponding chocolate meat when used to kill animals."
+  "tooltip.chocolatechickenmod.chocolate_syrup": "§7Adds sweetness and a little bitterness to your food....whatever it is!§r",
+  "tooltip.chocolatechickenmod.blue_curacao_syrup": "§7Adds §r§1BLUE§r§7 to your food....whatever it is!§r",
+  "tooltip.chocolatechickenmod.chocolate_sword": "§7Drops corresponding chocolate meat when used to kill animals.§r"
 }

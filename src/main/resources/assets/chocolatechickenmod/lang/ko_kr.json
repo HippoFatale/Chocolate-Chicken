@@ -1,5 +1,11 @@
 {
+  "item.chocolatechickenmod.citrus_orange": "오렌지",
+  "item.chocolatechickenmod.citrus_lemon": "레몬",
+
   "item.chocolatechickenmod.chocolate_syrup": "초코 시럽",
+  "block.chocolatechickenmod.chocolate_syrup_crate": "초코 시럽 상자",
+  "item.chocolatechickenmod.blue_curacao_syrup": "블루 큐라소 시럽",
+  "block.chocolatechickenmod.blue_curacao_syrup_crate": "블루 큐라소 시럽 상자",
 
   "item.chocolatechickenmod.chocolate_bread": "초코 빵",
   "item.chocolatechickenmod.chocolate_chicken": "초코 치킨",
@@ -7,15 +13,18 @@
   "item.chocolatechickenmod.chocolate_pork": "초코 삼겹살",
   "item.chocolatechickenmod.chocolate_steak": "초코 스테이크",
 
+  "item.chocolatechickenmod.blue_chicken": "파란 치킨",
+  "item.chocolatechickenmod.blue_mutton": "파란 양고기",
+  "item.chocolatechickenmod.blue_pork": "파란 삼겹살",
+  "item.chocolatechickenmod.blue_steak": "파란 스테이크",
+
   "item.chocolatechickenmod.chocolate_sword": "초코 칼",
 
-
-  "block.chocolatechickenmod.chocolate_syrup_crate": "초코 시럽 상자",
-
+  "block.chocolatechickenmod.chocolate_double_boiler" : "초콜릿 중탕기",
 
   "creativetab.chocolatechickenmod.chocolate_chicken_items": "Chocolate Chicken Mod",
 
-
-  "tooltip.chocolatechickenmod.chocolate_syrup": "음식이 뭐든지 간에 달콤함과 약간의 씁쓸함을 첨가합니다.",
-  "tooltip.chocolatechickenmod.chocolate_sword": "동물을 잡으면 해당 동물의 초코 고기를 드랍합니다."
+  "tooltip.chocolatechickenmod.chocolate_syrup": "§7음식에 초콜릿을 첨가합니다.§r",
+  "tooltip.chocolatechickenmod.blue_curacao_syrup": "§7음시을 §r§1파랗게§r§7 만들어줍니다.§r",
+  "tooltip.chocolatechickenmod.chocolate_sword": "§7동물을 잡으면 해당 동물의 초코 고기를 드랍합니다.§r"
 }
