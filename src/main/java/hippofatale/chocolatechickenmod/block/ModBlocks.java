@@ -33,7 +33,8 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> CHOCOLATE_DOUBLE_BOILER = registerBlock("chocolate_double_boiler",
             () -> new ChocolateDoubleBoilerBlock(BlockBehaviour.Properties.of()
-
+                    .strength(4f)
+                    .sound(SoundType.METAL)
             )
     );
 
