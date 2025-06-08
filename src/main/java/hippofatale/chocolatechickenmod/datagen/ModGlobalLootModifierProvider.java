@@ -3,6 +3,7 @@ package hippofatale.chocolatechickenmod.datagen;
 import hippofatale.chocolatechickenmod.ChocolateChickenMod;
 import hippofatale.chocolatechickenmod.item.ModItems;
 import hippofatale.chocolatechickenmod.loot.AddItemModifier;
+import hippofatale.chocolatechickenmod.recipe.ModRecipes;
 import hippofatale.chocolatechickenmod.util.ModTags;
 import net.minecraft.advancements.critereon.EntityEquipmentPredicate;
 import net.minecraft.advancements.critereon.EntityPredicate;

@@ -33,6 +33,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
         );
         horizontalBlock(ModBlocks.BLUE_CURACAO_SYRUP_CRATE.get(), blueCuracaoSyrupCrateModel);
         simpleBlockItem(ModBlocks.BLUE_CURACAO_SYRUP_CRATE.get(), blueCuracaoSyrupCrateModel);
+
+        //chocolate double boiler
+        ModelFile chocolateDoubleBoilerModel = models().orientableWithBottom("chocolate_double_boiler",
+                modLoc("block/chocolate_double_boiler_side"),
+                modLoc("block/chocolate_double_boiler_front"),
+                modLoc("block/chocolate_double_boiler_side"),
+                modLoc("block/chocolate_double_boiler_top")
+        );
+        horizontalBlock(ModBlocks.CHOCOLATE_DOUBLE_BOILER.get(), chocolateDoubleBoilerModel);
+        simpleBlockItem(ModBlocks.CHOCOLATE_DOUBLE_BOILER.get(), chocolateDoubleBoilerModel);
     }
 
 }

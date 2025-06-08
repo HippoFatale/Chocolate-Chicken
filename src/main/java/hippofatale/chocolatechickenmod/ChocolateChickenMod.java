@@ -1,10 +1,15 @@
 package hippofatale.chocolatechickenmod;
 
 import hippofatale.chocolatechickenmod.block.ModBlocks;
+import hippofatale.chocolatechickenmod.block.entity.ModBlockEntities;
 import hippofatale.chocolatechickenmod.item.ModCreativeModeTabs;
 import hippofatale.chocolatechickenmod.item.ModItems;
 import hippofatale.chocolatechickenmod.loot.ModLootModifiers;
+import hippofatale.chocolatechickenmod.recipe.ModRecipes;
+import hippofatale.chocolatechickenmod.screen.ModMenuTypes;
+import hippofatale.chocolatechickenmod.screen.custom.ChocolateDoubleBoilerScreen;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -50,6 +55,10 @@ public class ChocolateChickenMod
         ModBlocks.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+
+        ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -91,6 +100,11 @@ public class ChocolateChickenMod
         public static void onClientSetup(FMLClientSetupEvent event)
         {
 
+        }
+
+        @SubscribeEvent
+        public static void registerScreens(RegisterMenuScreensEvent event) {
+            event.register(ModMenuTypes.CHOCOLATE_DOUBLE_BOILER_MENU.get(), ChocolateDoubleBoilerScreen::new);
         }
     }
 }

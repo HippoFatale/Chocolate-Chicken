@@ -19,8 +19,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(RecipeOutput recipeOutput) {
 
         //chocolate syrup
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CHOCOLATE_SYRUP.get(), 2)
-                .requires(Items.COCOA_BEANS)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CHOCOLATE_SYRUP.get(), 1)
+                .requires(Items.COCOA_BEANS, 2)
                 .requires(Items.SUGAR)
                 .requires(Items.WATER_BUCKET)
                 .unlockedBy("has_cocoa_beans", has(Items.COCOA_BEANS))
@@ -40,7 +40,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(recipeOutput);
 
         //blue curacao syrup
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.BLUE_CURACAO_SYRUP.get(), 3)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.BLUE_CURACAO_SYRUP.get(), 1)
                 .requires(Items.BLUE_DYE)
                 .requires(ModItems.CITRUS_ORANGE)
                 .requires(ModItems.CITRUS_LEMON)
@@ -96,6 +96,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_chocolate_syrup", has(ModItems.CHOCOLATE_SYRUP))
                 .unlockedBy("has_cooked_beef", has(Items.COOKED_BEEF))
                 .save(recipeOutput);
+
         //tools
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHOCOLATE_SWORD.get())
                 .pattern("C")
@@ -105,6 +106,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('C', ModItems.CHOCOLATE_BREAD.get())
                 .unlockedBy("has_bread", has(Items.BREAD))
                 .unlockedBy("has_chocolate_bread", has(ModItems.CHOCOLATE_BREAD))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHOCOLATE_DOUBLE_BOILER.get())
+                .pattern("IBI")
+                .pattern("IWI")
+                .pattern("ICI")
+                .define('I', Items.IRON_INGOT)
+                .define('B', Items.BUCKET)
+                .define('W', Items.WATER_BUCKET)
+                .define('C', Items.CAMPFIRE)
+                .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT))
+                .unlockedBy("has_bucket", has(Items.BUCKET))
+                .unlockedBy("has_water_bucket", has(Items.WATER_BUCKET))
+                .unlockedBy("has_campfire", has(Items.CAMPFIRE))
                 .save(recipeOutput);
 
 

@@ -1,0 +1,9 @@
+{
+  "type": "chocolatechickenmod:chocolate",
+  "ingredient": {
+    "item": "minecraft:cooked_beef"
+  },
+  "result": {
+    "id": "chocolatechickenmod:chocolate_steak"
+  }
+}

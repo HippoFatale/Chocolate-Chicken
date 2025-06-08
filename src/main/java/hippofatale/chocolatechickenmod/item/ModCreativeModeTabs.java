@@ -26,9 +26,8 @@ public class ModCreativeModeTabs {
 
                         //syrups
                         output.accept(ModItems.CHOCOLATE_SYRUP);
-                        output.accept(ModItems.BLUE_CURACAO_SYRUP);
-                        //crates
                         output.accept(ModBlocks.CHOCOLATE_SYRUP_CRATE);
+                        output.accept(ModItems.BLUE_CURACAO_SYRUP);
                         output.accept(ModBlocks.BLUE_CURACAO_SYRUP_CRATE);
 
                         //chocolate
@@ -38,8 +37,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHOCOLATE_MUTTON);
                         output.accept(ModItems.CHOCOLATE_PORK);
                         output.accept(ModItems.CHOCOLATE_STEAK);
+
                         //tools
                         output.accept(ModItems.CHOCOLATE_SWORD);
+                        output.accept(ModBlocks.CHOCOLATE_DOUBLE_BOILER);
 
 
                     })

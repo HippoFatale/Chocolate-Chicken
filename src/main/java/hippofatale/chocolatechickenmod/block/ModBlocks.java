@@ -1,6 +1,7 @@
 package hippofatale.chocolatechickenmod.block;
 
 import hippofatale.chocolatechickenmod.ChocolateChickenMod;
+import hippofatale.chocolatechickenmod.block.custom.ChocolateDoubleBoilerBlock;
 import hippofatale.chocolatechickenmod.block.custom.CrateBlock;
 import hippofatale.chocolatechickenmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -27,6 +28,12 @@ public class ModBlocks {
             () -> new CrateBlock(BlockBehaviour.Properties.of()
                     .strength(4f)
                     .sound(SoundType.WOOD)
+            )
+    );
+
+    public static final DeferredBlock<Block> CHOCOLATE_DOUBLE_BOILER = registerBlock("chocolate_double_boiler",
+            () -> new ChocolateDoubleBoilerBlock(BlockBehaviour.Properties.of()
+
             )
     );
 
