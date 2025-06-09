@@ -8,4 +8,4 @@ It is a recently made mod so it doesn't have may features. But I plan to add mor
 
 ### etc
 Q. WHY?  
-A. It is a thing. https://youtu.be/9SJrJjjtJfQ?si=SpJD9Z0k2sDrDWx0 (Korean, no Engligh subtitles.)
+A. It is a thing. https://youtu.be/9SJrJjjtJfQ?si=SpJD9Z0k2sDrDWx0 (Korean, no English subtitles.)
