@@ -1,25 +1,11 @@
+[English](https://github.com/HippoFatale/Chocolate-Chicken/blob/main/README.en.md)
 
-Installation information
-=======
+![title small](https://github.com/user-attachments/assets/e36c73e0-dc75-423c-8f29-5ee2e48d48b6)
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+### 소개
+초코 치킨, 초코 빵 등 여러가지 초코 음식 아이템과, 그 외에 여러 가지 것들을 추가해 주는 모드입니다!  
+만든 지 얼마 되지 않은 모드라서 콘텐츠가 별로 없지만, 앞으로 업데이트하면서 추가할 예정입니다.
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
-
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
-
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
-
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+### 기타
+Q. 이거 진짜예요?  
+A. 네! https://youtu.be/9SJrJjjtJfQ?si=SpJD9Z0k2sDrDWx0 (지금은 폐업했습니다.)
