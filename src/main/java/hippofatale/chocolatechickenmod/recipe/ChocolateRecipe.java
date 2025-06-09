@@ -18,7 +18,7 @@ public record ChocolateRecipe(Ingredient inputItem, ItemStack output) implements
     public NonNullList<Ingredient> getIngredients() {
         NonNullList<Ingredient> list = NonNullList.create();
         list.add(inputItem);
-        return Recipe.super.getIngredients();
+        return list;
     }
 
     @Override
