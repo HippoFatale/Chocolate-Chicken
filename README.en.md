@@ -1,3 +1,5 @@
+[한국어](https://github.com/HippoFatale/Chocolate-Chicken/blob/main/README.md)
+
 ![title small](https://github.com/user-attachments/assets/e36c73e0-dc75-423c-8f29-5ee2e48d48b6)
 
 ### Overview
