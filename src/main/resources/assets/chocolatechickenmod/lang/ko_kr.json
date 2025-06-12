@@ -24,7 +24,7 @@
 
   "creativetab.chocolatechickenmod.chocolate_chicken_items": "Chocolate Chicken Mod",
 
-  "tooltip.chocolatechickenmod.chocolate_syrup": "§7음식에 초콜릿을 첨가합니다.§r",
-  "tooltip.chocolatechickenmod.blue_curacao_syrup": "§7음시을 §r§1파랗게§r§7 만들어줍니다.§r",
+  "tooltip.chocolatechickenmod.chocolate_syrup": "§7음식에 초코를 첨가합니다.§r",
+  "tooltip.chocolatechickenmod.blue_curacao_syrup": "§7음식을 §r§9파랗게§r§7 만들어줍니다.§r",
   "tooltip.chocolatechickenmod.chocolate_sword": "§7동물을 잡으면 해당 동물의 초코 고기를 드랍합니다.§r"
 }
